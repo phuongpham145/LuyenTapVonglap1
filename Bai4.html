@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let t1 = 1 , t2 = 1 , nextNumber ;
+    while (t1 % 5 != 0){
+        nextNumber = t1 + t2 ;
+        t1 = t2 ;
+        t2 = nextNumber ;
+    }
+    document.write("First Number in Fibonaci mod 5 = 0 is : "+t1);
+</script>
+</body>
+</html>

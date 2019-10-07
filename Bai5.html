@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let t1 = 1 , t2 = 1 , nextNumber, tong = 0 ;
+    for (i = 1; i <= 20; i++){
+        tong +=  t1 ;
+        nextNumber = t1 + t2  ;
+        t1 = t2 ;
+        t2 = nextNumber ;
+    }
+    document.write(" Sum = "+tong);
+</script>
+</body>
+</html>

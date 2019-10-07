@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="dulieu">
+    <button type="button" onclick="lietke();">Liệt kê</button>
+</form>
+<script>
+    function lietke(n) {
+        let i, t1 = 1 , t2 = 1 , nextNumber ;
+        n = Number(document.getElementById("dulieu").value);
+        for (i = 1; i <= n; i++){
+            document.write(t1 + " ");
+            document.write("<br>")
+            nextNumber = t1 + t2  ;
+            t1 = t2 ;
+            t2 = nextNumber ;
+        }
+        return 0 ;
+
+    }
+</script>
+</body>
+</html>
